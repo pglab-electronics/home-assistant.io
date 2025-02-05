@@ -44,6 +44,7 @@ ha_platforms:
   - valve
   - water_heater
 ha_integration_type: integration
+ha_quality_scale: platinum
 ---
 
 MQTT (aka MQ Telemetry Transport) is a machine-to-machine or "Internet of Things" connectivity protocol on top of TCP/IP. It allows extremely lightweight publish/subscribe messaging transport.
@@ -793,7 +794,7 @@ support_url:
     'osc_cmd_tpl':         'oscillation_command_template',
     'osc_stat_t':          'oscillation_state_topic',
     'osc_val_tpl':         'oscillation_value_template',
-    'platform':            'p',
+    'p':                   'platform',
     'pct_cmd_t':           'percentage_command_topic',
     'pct_cmd_tpl':         'percentage_command_template',
     'pct_stat_t':          'percentage_state_topic',
