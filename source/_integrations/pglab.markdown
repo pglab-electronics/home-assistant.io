@@ -18,8 +18,8 @@ This integration allows you to control [PG LAB Electronics](https://www.pglab.de
 
 ## Supported devices
 
-- [E-Board](https://www.pglab.dev/e-board): Controller board to interface I2C devices by a local LAN connection.
-- [E-Relay](https://www.pglab.dev/e-relay): 8 Channels relay board controlled by I2C connection.
+- [E-Board](https://www.pglab.dev/shop/p/e-board): Controller board to interface I2C devices by a local LAN connection.
+- [E-Relay](https://www.pglab.dev/shop/p/e-relay): 8 Channels relay board controlled by I2C connection.
 - [E-Switch]: Coming soon
 
 Each E-Board device can be connected to maximum of 8 E-Relay boards. E-Board can control
