@@ -20,12 +20,12 @@ This {% term integration %} is a meta-component and configures a default set of 
 - [Conversation](/integrations/conversation/) (`conversation`)
 - [DHCP discovery](/integrations/dhcp/) (`dhcp`)
 - [Energy](/integrations/energy/) (`energy`)
+- [Go2rtc](/integrations/go2rtc/) (`go2rtc`)
 - [History](/integrations/history/) (`history`)
 - [Home Assistant Alerts](/integrations/homeassistant_alerts) (`homeassistant_alerts`)
 - [Home Assistant Cloud](/integrations/cloud/) (`cloud`)
 - [Image upload](/integrations/image_upload/) (`image_upload`)
 - [Logbook](/integrations/logbook/) (`logbook`)
-- [Map](/integrations/map/) (`map`)
 - [Media source](/integrations/media_source/) (`media_source`)
 - [Mobile app support](/integrations/mobile_app/) (`mobile_app`)
 - [My Home Assistant](/integrations/my/) (`my`)
@@ -38,7 +38,7 @@ This {% term integration %} is a meta-component and configures a default set of 
 
 ## Configuration
 
-To integrate this into Home Assistant, add the following section to your `configuration.yaml` file:
+To integrate this into Home Assistant, add the following section to your {% term "`configuration.yaml`" %} file:
 
 ```yaml
 # Example configuration.yaml entry

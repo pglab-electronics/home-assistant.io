@@ -10,12 +10,14 @@ ha_iot_class: Local Polling
 ha_codeowners:
   - '@Julius2342'
   - '@DeerMaximum'
+  - '@pawlizio'
 ha_domain: velux
 ha_platforms:
   - cover
   - light
   - scene
 ha_integration_type: integration
+ha_dhcp: true
 ---
 
 [Velux](https://www.velux.com/) {% term integration %} for Home Assistant allows you to connect to a Velux KLF 200 interface, to control [io-homecontrol](http://www.io-homecontrol.com) devices like windows and blinds. The module allows you to start scenes configured within KLF 200.
@@ -30,9 +32,16 @@ There is currently support for the following device types within Home Assistant:
 
 {% include integrations/config_flow.md %}
 
-## Services
+During configuration, you will be asked for a hostname and password:
 
-### Service `velux.reboot_gateway`
+- Hostname: enter the IP address of the KLF 200 gateway.
+- Password: enter the password of the gateway's wireless access point (printed on the underside - **not** the web login password).
+
+You must complete the configuration within 5 minutes of rebooting the KLF 200 gateway while the access point is still available.
+
+## Actions
+
+### Action `velux.reboot_gateway`
 
 Reboots the configured KLF 200 Gateway.
 
@@ -41,13 +50,13 @@ As a workaround, you can use an automation to force a restart of the KLF 200 bef
 
 ```yaml
 automation:
-  alias: KLF reboot on hass stop event
-  description: Reboots the KLF200 in order to avoid SSL Handshake issue
-  trigger:
-    - platform: homeassistant
-      event: shutdown
-  action:
-    - service: velux.reboot_gateway
+  - alias: "KLF reboot on hass stop event"
+    description: "Reboots the KLF200 in order to avoid SSL Handshake issue"
+    triggers:
+      - trigger: homeassistant
+        event: shutdown
+    actions:
+      - action: velux.reboot_gateway
 ```
 
 ## Velux Active (KIX 300)

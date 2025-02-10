@@ -74,9 +74,16 @@ The integration adds entities for setting setpoints for the fan in the respectiv
  - High
  - Cooker hood
 
+The integration adds entities for setting remaining time in minutes for:
+
+ - Fireplace mode runtime (in minutes)
+
 ### Switch
 
-The integration adds an entity for a switch called _Electric heater_ that controls the heating element in the unit.
+The integration adds the following switches:
+
+- _Electric heater_ that controls the heating element in the unit.
+- _Fireplace mode_ that enables or disables the Fireplace mode.
 
 ### A note about shutting down the device
  
@@ -86,6 +93,6 @@ The consequences of shutting down the unit can be costly and extensive. For exam
 
 If you need to shut down the unit, make sure to take all necessary precautions, such as securing the system with frost protection dampers.
 
-Furthermore, Flexit recommends to unplug the unit from the power socket before replacing a filter. To prevent damage, always initiate a controlled shutdown from the control panel (or, in the future, from a service call in Home Assistant) before unplugging the device.
+Furthermore, Flexit recommends unplugging the unit from the power socket before replacing a filter. To prevent damage, always initiate a controlled shutdown from the control panel (or, in the future, from an action in Home Assistant) before unplugging the device.
 
 {% include integrations/config_flow.md %}

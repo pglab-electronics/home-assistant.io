@@ -3,6 +3,11 @@ type: card
 title: "Statistics graph card"
 sidebar_label: Statistics graph
 description: "The statistics graph card allows you to display a graph with statistics data for each of the entities listed."
+related:
+  - docs: /integrations/frontend/
+    title: Themes
+  - docs: /dashboards/cards/
+    title: Dashboard cards
 ---
 
 The statistics graph card allows you to display a graph of statistics data for each of the entities listed.
@@ -57,7 +62,7 @@ title:
   type: string
 period:
   required: false
-  description: The period of the rendered graph. `5minute`, `hour`, `day`, `week` or `month` 
+  description: The period of the rendered graph. `5minute`, `hour`, `day`, `week` or `month`. If `energy_date_selection` is true, and `period` is not defined, the chart period will auto-select between month/day/hour based on the selected date range.
   type: string  
 hide_legend:
   required: false
@@ -69,6 +74,28 @@ logarithmic_scale:
   description: If true, numerical values on the Y-axis will be displayed with a logarithmic scale.
   type: boolean
   default: false
+min_y_axis:
+  required: false
+  description: Lower bound for the Y-axis range.
+  type: float
+max_y_axis:
+  required: false
+  description: Upper bound for the Y-axis range.
+  type: float
+fit_y_data:
+  required: false
+  description: If true, configured Y-axis bounds would automatically extend (but not shrink) to fit the data.
+  type: boolean
+  default: false
+energy_date_selection:
+  required: false
+  description: If true, chart date range will follow the date selected on an `energy-date-selection` card on the same view, similar to energy cards.
+  type: boolean  
+  default: false
+collection_key:
+  required: false
+  description: If using `energy_date_selection`, you can set a custom key to match the optional key of an `energy-date-selection` card. This is not typically required, but can be useful if multiple date selection cards are used on the same view.  
+  type: string  
 {% endconfiguration %}
 
 ### Options for entities

@@ -13,12 +13,15 @@ ha_codeowners:
   - '@synesthesiam'
 ha_config_flow: true
 ha_platforms:
+  - assist_satellite
   - binary_sensor
+  - conversation
   - number
   - select
   - stt
   - switch
   - tts
+  - wake_word
 ha_iot_class: Local Push
 ha_zeroconf: true
 ---
