@@ -7,7 +7,7 @@ ha_release: "2024.2"
 ha_iot_class: Local Push
 ha_config_flow: true
 ha_codeowners:
-  - "@pierluigi"
+  - "@pglab-electronics"
 ha_domain: pglab
 ha_platforms:
   - switch
