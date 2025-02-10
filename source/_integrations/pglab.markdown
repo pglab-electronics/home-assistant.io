@@ -2,9 +2,6 @@
 title: PG LAB Electronics
 description: Instructions on how to integrate PG LAB Electronics with Home Assistant.
 ha_category:
-  - Binary sensor
-  - Cover
-  - Sensor
   - Switch
 ha_release: "2024.2"
 ha_iot_class: Local Push
@@ -13,9 +10,6 @@ ha_codeowners:
   - "@pierluigi"
 ha_domain: pglab
 ha_platforms:
-  - binary_sensor
-  - cover
-  - sensor
   - switch
 ha_integration_type: integration
 ---
@@ -57,7 +51,6 @@ Configure each PG LAB Electronics devices following these steps:
 PG LAB Electronics Relays, Shutters and Switches are supported.
 
 - PG LAB Relays will be added as Home Assistant `switch` entities.
-- PG LAB Shutters will be added as Home Assistant `cover` entities.
 - The integration will also create diagnostic Status Sensors, with device different information.
 
 {% include integrations/config_flow.md %}
