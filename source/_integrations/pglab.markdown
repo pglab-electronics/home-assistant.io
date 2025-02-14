@@ -53,6 +53,7 @@ PG LAB Electronics Relays, Shutters and Switches are supported.
 
 - PG LAB Relays will be added as Home Assistant `switch` entities.
 - The integration will also create diagnostic Status Sensors, with device different information.
+
 ## Removing the integration
 
 This integration follows standard integration removal. No extra steps are required.
