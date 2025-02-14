@@ -45,6 +45,8 @@ Configure each PG LAB Electronics devices following these steps:
 5. Set up the MQTT broker address, port number, username, and password.
 6. Save the configuration and restart the device.
 
+{% include integrations/config_flow.md %}
+
 ## Supported features
 
 PG LAB Electronics Relays, Shutters and Switches are supported.
@@ -52,4 +54,3 @@ PG LAB Electronics Relays, Shutters and Switches are supported.
 - PG LAB Relays will be added as Home Assistant `switch` entities.
 - The integration will also create diagnostic Status Sensors, with device different information.
 
-{% include integrations/config_flow.md %}
